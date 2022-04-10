@@ -523,4 +523,16 @@
 		"tall"						"200"
 		"PaintBackgroundType"		"0"
 	}
+	
+		HudMatchStatus
+	{
+		"fieldName"				"HudMatchStatus"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"0"
+		"ypos"					"0"
+		"zpos"					"3"
+		"wide"					"f0"
+		"tall"					"f0"
+	}
 }
