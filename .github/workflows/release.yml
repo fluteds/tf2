@@ -1,0 +1,70 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    name: Tag Version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+
+    - name: Install GitVersion
+      uses: gittools/actions/gitversion/setup@v0.9.7
+      with:
+        versionSpec: 5.x
+  
+    - id: determine_version
+      name: Determine Version
+      uses: gittools/actions/gitversion/execute@v0.9.7
+
+    - name: Create git tag
+      run: git tag $GITVERSION_SEMVER -f
+
+    - name: Push to repository
+      run: git push --tags
+
+  create:
+    name: Zip & Release
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - uses: actions/checkout@v2.2.0
+        with:
+          fetch-depth: 0
+
+      - name: Zip custom
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'custom.zip'
+          exclusions: 'clear-sound-cache.bat /cfg/* cfg.zip /.git/* README.md /.github/* /oldHuds/* oldHuds.zip'
+
+      - name: Zip cfg
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'cfg.zip'
+          exclusions: 'clear-sound-cache.bat /custom/* /custom.zip /.git/* README.md /.github/* /oldHuds/* oldHuds.zip'
+        
+      - name: 'Get Previous tag'
+        id: previoustag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.previoustag.outputs.tag }} 
+          generateReleaseNotes: true
+          bodyFile: ".github/body.md"
+          allowUpdates: true
+          owner: fluteds
+          artifacts: "cfg.zip, custom.zip, clear-sound-cache.bat"
+          token: ${{ secrets.GITHUB_TOKEN }}  
