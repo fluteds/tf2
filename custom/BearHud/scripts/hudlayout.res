@@ -259,7 +259,7 @@
 		"CornerRadius"				"2"
 		"RightJustify"				"1"
 		
-		"TextFont"					"CF12"
+		"TextFont"					"" // Set to "CF12" to show names
 		
 		"TeamBlue"					"blueteam"
 		"TeamRed"					"redteam"
