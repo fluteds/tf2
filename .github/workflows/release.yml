@@ -54,6 +54,10 @@ jobs:
       - name: 'Get Previous tag'
         id: previoustag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      
+      - name: Changelog
+        uses: Bullrich/generate-release-changelog@master
+        id: Changelog
 
       - name: Create Release
         uses: ncipollo/release-action@v1
@@ -61,6 +65,8 @@ jobs:
           tag: ${{ steps.previoustag.outputs.tag }} 
           generateReleaseNotes: true
           bodyFile: ".github/body.md"
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
           allowUpdates: true
           owner: fluteds
           artifacts: "cfg.zip, custom.zip, clear-sound-cache.bat"
