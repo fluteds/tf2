@@ -53,13 +53,13 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           filename: 'custom.zip'
-          exclusions: 'clear-sound-cache.bat /cfg/* cfg.zip /.git/* README.md /.github/* /oldHuds/* oldHuds.zip'
+          exclusions: 'clear-sound-cache.bat /cfg/* cfg.zip /.git/* README.md /.github/* /oldHuds/* oldHuds.zip /visual/*'
 
       - name: Zip cfg
         uses: thedoctor0/zip-release@master
         with:
           filename: 'cfg.zip'
-          exclusions: 'clear-sound-cache.bat /custom/* /custom.zip /.git/* README.md /.github/* /oldHuds/* oldHuds.zip'
+          exclusions: 'clear-sound-cache.bat /custom/* /custom.zip /.git/* README.md /.github/* /oldHuds/* oldHuds.zip /visual/*'
         
       - name: 'Get Previous tag'
         id: previoustag
@@ -79,5 +79,5 @@ jobs:
             ${{ steps.Changelog.outputs.changelog }}
           allowUpdates: true
           owner: fluteds
-          artifacts: "cfg.zip, custom.zip, clear-sound-cache.bat"
+          artifacts: "cfg.zip, custom.zip, clear-sound-cache.bat, visual/lod-tweak-tf2.nip"
           token: ${{ secrets.GITHUB_TOKEN }}  

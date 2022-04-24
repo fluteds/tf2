@@ -1,6 +1,6 @@
 # TF2 Configs
 
-All of my cfg scripts are intended to be used alongside Yttrium's Viewmodel Mod. Which handles all of the view model hiding for me. Most of these are heavily adapted versions of Woolen's configs. The hud is a heavily adapted version of Bear Hud.
+A collection of my cfg scripts, mods and other things that I've collected over the years. All of my cfg scripts are intended to be used alongside Yttrium's Viewmodel Mod. Which handles all of the view model hiding for me. Most of these are heavily adapted versions of Woolen's configs. The hud is a heavily adapted version of Bear Hud.
 
 ## Installation
 
@@ -8,7 +8,7 @@ SET YOUR CONFIG.CFG TO READ ONLY BEFORE DOING ANYTHING
 
 1. Head to the releases tab to download. (You can also download the source code zip from the repo but it's not recommended as the releases tab cuts out all the unnecessary files.)
 
-CFG contains all class configs including autoexec and other useful configs. Custom contains huds and mods. Clear-sound-cache.bat is a batch script for Windows that clears the sound cache files in your TF2 directory and frees up space.
+CFG contains all class configs including autoexec and other useful configs. Custom contains huds and mods. Clear-sound-cache.bat is a batch script for Windows that clears the sound cache files in your TF2 directory and frees up space. Lod-tweak-tf2.nip is a nvidia inspector file that allows TF2 to look "blocky".
 
 ### cfg
 
