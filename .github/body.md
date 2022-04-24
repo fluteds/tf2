@@ -15,4 +15,7 @@ To update, download the zip files needed, extract and replace over the existing 
 <tr>
 	<td>Clear sound cache
 	<td>Deletes all the sound cache files in your TF2 directory and frees up space (Windows only)
+<tr>
+	<td>Lod Tweak
+	<td>A Nvidia inspector file that allows TF2 to look "blocky"
 </table>

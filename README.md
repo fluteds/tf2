@@ -2,6 +2,18 @@
 
 A collection of my cfg scripts, mods and other things that I've collected over the years. All of my cfg scripts are intended to be used alongside Yttrium's Viewmodel Mod. Which handles all of the view model hiding for me. Most of these are heavily adapted versions of Woolen's configs. The hud is a heavily adapted version of Bear Hud.
 
+## Preview
+
+<table align="center">
+<tr>
+  <td><img src="https://user-images.githubusercontent.com/34608301/164985763-74a140e4-5728-4510-8c62-8437263cff5b.png">
+  <td><img src="https://user-images.githubusercontent.com/34608301/164986021-3f4ac2dd-7808-49dc-b6a8-e4a6eccc7d55.png">
+<tr align="center">
+  <td>All Class FOV In Game (except Spy)
+  <td>Spy FOV In Game (with spy.cfg loaded)
+</table>
+
+
 ## Installation
 
 SET YOUR CONFIG.CFG TO READ ONLY BEFORE DOING ANYTHING
