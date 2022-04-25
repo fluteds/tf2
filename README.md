@@ -13,7 +13,6 @@ A collection of my cfg scripts, mods and other things that I've collected over t
   <td>Spy FOV In Game (with spy.cfg loaded)
 </table>
 
-
 ## Installation
 
 SET YOUR CONFIG.CFG TO READ ONLY BEFORE DOING ANYTHING
