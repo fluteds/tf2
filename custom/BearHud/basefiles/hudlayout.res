@@ -600,14 +600,14 @@
 		"fieldName" "HudCloseCaption"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"c180"
+		"xpos"		"c280"
 		"ypos"		"246"	[$WIN32]
-		"ypos"		"236"	[$X360]
-		"wide"		"500"
+		"ypos"		"246"	[$X360]
+		"wide"		"70"
 		"tall"		"136"	[$WIN32]
 		"tall"		"176"	[$X360]
 
-		"BgAlpha"	"0"
+		"BgAlpha"	"128" // bg for close captions set to 0 for none
 
 		"GrowTime"		"0.25"
 		"ItemHiddenTime"	"0.2"  // Nearly same as grow time so that the item doesn't start to show until growth is finished
