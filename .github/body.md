@@ -1,4 +1,4 @@
-To install please follow the [readme instructions.](https://github.com/fluteds/tf2/blob/master/README.md#installation)
+To install please follow the [readme instructions.](https://github.com/fluteds/tf2/blob/master/readme.md#installation)
 
 To update, download the zip files needed, extract and replace over the existing files in your tf directory, ensuring your config.cfg file is still read only after updating/replacing.
 
