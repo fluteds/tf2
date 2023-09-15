@@ -19,8 +19,8 @@ SET YOUR CONFIG.CFG TO READ ONLY BEFORE DOING ANYTHING or TF2 will override your
 
 1. Head to the releases tab to download. (You can also download the source code zip from the repo but it's not recommended as the releases tab cuts out all the unnecessary files.)
 
-CFG contains all class configs including autoexec and other useful configs. Custom contains huds and mods. Clear-sound-cache.bat is a batch script for Windows that clears the sound cache files in your TF2 directory and frees up space. Lod-tweak-tf2.nip is a Nvidia Inspector file that allows TF2 to look "blocky".
-
+CFG contains all class configs including autoexec and other useful configs. Custom contains huds and mods. Clear-sound-cache.bat is a batch script for Windows that clears the sound cache files in your TF2 directory and frees up space. `Lod-tweak-tf2.nip` is a Nvidia Inspector file that allows TF2 to look "blocky". To revert back to normal TF2 textures, use `Lod-tweak-quality-tf2.nip`.
+  
 ### cfg
 
 1. Find your `cfg` folder, usually found here: `"Steam\SteamApps\common\Team Fortress 2\tf\cfg"`

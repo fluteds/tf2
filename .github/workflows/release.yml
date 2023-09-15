@@ -79,5 +79,5 @@ jobs:
             ${{ steps.Changelog.outputs.changelog }}
           allowUpdates: true
           owner: fluteds
-          artifacts: "cfg.zip, custom.zip, clear-sound-cache.bat, visual/lod-tweak-tf2.nip"
+          artifacts: "cfg.zip, custom.zip, clear-sound-cache.bat, visual/lod-tweak-tf2.nip, visual/lod-tweak-quality-tf2.nip"
           token: ${{ secrets.GITHUB_TOKEN }}  
