@@ -4,7 +4,7 @@ A collection of my cfg scripts, mods and other things for my TF2 installtion on 
 
 ## Installation
 
-Download from the [Releases tab](https://github.com/fluteds/tf2/releases). (Steamdeck released are labelled as 0.1.x - Steamdeck)
+Download from the [Releases tab](https://github.com/fluteds/tf2/releases). (Steamdeck releases are labelled as 0.1.x - Steamdeck)
 
 ### Before starting
 
