@@ -1,12 +1,9 @@
 ## Custom Mod Credits
-Direct sources to the Mods if you'd like to support their work!
-Will be hopefully updated with more sources as they come in the future.
+Direct sources to the Mods if you'd like to support their work.
+Most of, if not all, the mods I use have been changed from the original source.
 
-## Vinyl Record Stock Sticky Reskin
-> https://gamebanana.com/mods/369048
-
-## High Roller Stock Reskin
-> https://gamebanana.com/mods/369033
+## Backy
+> https://gamebanana.com/mods/477914
 
 ## Poker Night Victory Sound
 > https://gamebanana.com/sounds/47871
